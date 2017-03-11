@@ -1,0 +1,39 @@
+body{
+  margin: 50px;
+  font-size: 15px;
+  font-family: inherit;
+  background: #081f2c;
+}
+  .menu{
+   width: 150px;
+	 height: 50px;
+   padding: 0%;
+	 overflow-x:hidden;
+	 position: relative;
+	 margin-right: 10px;
+	 border-radius:50px;
+   list-style-type: none;
+   float: left;
+
+ }
+ .item{
+			width: 300px;
+			height: 50px;
+			font:bold 16px/50px "arial";
+			position: absolute; right: 0;
+			color:white;
+      text-align: right;
+			text-decoration: none;
+			white-space:pre;
+			transition: width .7s, color .7s;
+    }
+
+
+    .color1{background:linear-gradient(60deg, deepskyblue 150px,#333 180px, #333);}
+		.color2{background:linear-gradient(60deg, papayawhip 150px,#333 180px, #333);}
+		.color3{background:linear-gradient(60deg, orange 150px,#333 180px, #333);}
+		.color4{background:linear-gradient(60deg, pink 150px,#333 180px, #333);}
+
+		.item:hover{
+		width: 150px;
+		color: black;}

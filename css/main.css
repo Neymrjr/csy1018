@@ -1,12 +1,43 @@
-body{
+ @import url('https://fonts.googleapis.com/css?family=Raleway');
+
+ body{
   margin: 0%;
   font-size: 15px;
   font-family: inherit;
   background: #081f2c;
 }
-h1, h3, p {
+ h1,h3, p {
   max-width: 600px;
   margin: 0 auto 1em;
+}
+.text {
+  text-align:center;
+  position:absolute;
+  width:420px;
+  top:234px;
+  left:32%;
+  margin: -50px;
+}
+h1 {
+  color:#a838c3;
+  font-family: 'Raleway', sans-serif;
+  font-size:64px;
+  letter-spacing:10px;
+  animation: colorchange 20s alternate infinite;
+}
+
+@keyframes colorchange {
+   0% {color: #47748e;}
+  10% {color: #8e44ad;}
+  20% {color: #765c66;}
+  30% {color: #885155;}
+  40% {color: #616677;}
+  50% {color: #34495e;}
+  60% {color: #327fa0;}
+  70% {color: #8bc24a;}
+  80% {color: #ffa500;}
+  90% {color: #01bcfb;}
+  100% {color: pink;}
 }
 code {
 	padding: 2px;
@@ -43,7 +74,7 @@ code {
 
 
     .color1{background:linear-gradient(60deg, deepskyblue 150px,#333 180px, #333);}
-		.color2{background:linear-gradient(60deg, papayawhip 150px,#333 180px, #333);}
+		.color2{background:linear-gradient(60deg, #8BC34A 150px,#333 180px, #333);}
 		.color3{background:linear-gradient(60deg, orange 150px,#333 180px, #333);}
 		.color4{background:linear-gradient(60deg, pink 150px,#333 180px, #333);}
 
@@ -122,9 +153,16 @@ code {
   left: 0;
   z-index: 1;
   padding: 4em;
-  background-image: linear-gradient(135deg, rgb(17, 145, 188) 0%,rgb(241, 226, 226) 35%,rgb(247, 241, 241) 100%);
   background-size: 200%;
+  background: linear-gradient(132deg, #1091bd, #ad3e36);
+  background-size: 400% 400%;
+  animation: BackgroundGradient 30s ease infinite;
 }
+@keyframes BackgroundGradient {
+               0% {background-position: 0% 50%;}
+               50% {background-position: 100% 50%;}
+               100% {background-position: 0% 50%;}
+             }
 
 .sidebartoggle {
   position: absolute;
@@ -159,3 +197,15 @@ label[for="sidebartoggle"] {
 /* Micro reset */
 *,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;}
 html, body { height: 100%; width: 100%; font-family:cursive;, Arial, sans-serif; }
+
+
+@media all and (max-width: 900px) {
+  .menu{
+    visibility: hidden;
+
+  }
+  .item{
+    visibility: hidden;
+
+  }
+}

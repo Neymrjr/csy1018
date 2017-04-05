@@ -99,7 +99,7 @@ h1{
   font-size: 15px;
 }
 h5{
-  font-size: 64px;
+  font-size: 74px;
   font-family: 'Fredoka One', cursive;
   color: white;
 
@@ -107,8 +107,8 @@ h5{
 .message{
   position: absolute;
   top:33%;
-  left:11%;
-  width: 900px;
+  left:7%;
+  width: 1050px;
 }
 .press{
   font-size: 20px;
@@ -119,7 +119,7 @@ h5{
  text-transform:uppercase;
  font-family:'Copse',serif;
  margin-top:20px;
- opacity: 0.6;
+ opacity: 0.4;
  transition: width 2s, height 2s,infinite;
  }
  .press:hover{
@@ -137,16 +137,84 @@ h5{
    position: absolute;
    top: 57%;
    left:35%;
+ }
+   .icons{
+     display: flex;
+     flex-direction: row;
+     margin: 0;
+     padding: 0;
+     top: 68%;
+     left: 20%;
+     position: absolute;
+     transform: translate(-50%,-50%);
+   }
+   .icons .ico{
+     left: 46%;
+     float: left;
+     margin: 17px;
+     list-style: none;
+     width: 150px;
+     height: 150px;
+     line-height: 130px;
+     text-align: center;
+     background: #292929;
+     border-radius: 50%;
+     font-size: 60px;
+     position: relative;
+     transition: 0.5s ease-in-out;
+     z-index: 1;
+   }
+   #icon{
+     width: 100px;
+     height: 100px;
+     position: relative;
+     top:17%;
+     text-align: center;
+     color: white;
+   }
+   .icons .ico #icon:hover{
+     cursor: pointer;
+
+   }
+   .icons .ico:before{
+     content: "";
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 0;
+     background: white;
+     border-radius: 50%;
+     transform: scale(0);
+     transition: 0.5s ease-in-out;
+     z-index: -1;
+
+   }
+   .icons .ico:hover:before{
+     transform: scale(.9);
+   }
+  #icons:hover{
+     color: blue;
    }
 
-@keyframes colorchange {
-  70%{
-    color:#8d4f51;
-  }
-  80%{
-    color:#317fa0;
-  }
+.portfolio{
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 1%;
+  top:2%;
+  list-style: none;
 }
+ #icon2{
+  list-style: none;
+  width: 50px;
+  height: 50px;
+  line-height:30px;
+  text-align: center;
+  position: relative;
+}
+
+
 code {
 	padding: 2px;
 	background: #ddd;
@@ -155,19 +223,34 @@ code {
 .container{
   margin-left: 200px;
   padding: 0%;
-  width: 98%;
+  width:100%;
+
 
 }
+.box{
+  position: absolute;
+  top:0%;
+  left: 0%;
+  background-color: #292929;
+  opacity: 0.8;
+  width:1263px;
+  height: 120px;
+}
   .menu{
+  background: #111;
    width: 150px;
 	 height: 50px;
    padding: 0%;
 	 overflow-x:hidden;
 	 position: relative;
-	 margin-right: 10px;
+	 margin-right: 15px;
+   margin-top: -5px;
 	 border-radius:50px;
+   border-color: black;
    list-style-type: none;
    float: left;
+   top:40%;
+   left:20%;
  }
  .item{
 			width: 300px;
@@ -186,8 +269,12 @@ code {
 		.color4{background:linear-gradient(60deg, pink 150px,#333 180px, #333);}
 
 		.item:hover{
+      opacity: 100;
 		width: 150px;
 		color: black;
+  }
+  .box:hover{
+    opacity: 100;
   }
   .sidebar{
     position: absolute;
@@ -374,7 +461,7 @@ html, body { height: 100%; width: 100%; font-size: }
 footer{
   font-family: sans-serif;
   position: relative;
-  top:85%;
+  top:80%;
   background: #232121;
   padding: 0%;
   display: flex;
@@ -390,6 +477,9 @@ footer{
  }
 
 @media all and (max-width: 600px) {
+  body{
+    width: 600px;
+  }
   .menu{
     visibility: hidden;
 
@@ -398,6 +488,7 @@ footer{
     visibility: hidden;
 
   }
-  label{ visibility: visible;}
-
+  label{
+    visibility: visible;
+  }
 }

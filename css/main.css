@@ -24,8 +24,6 @@ p {
 	text-align:justify;
 	margin: 20px;
   right: 45%;
-
-
 }
 
 p.colo1 {
@@ -92,8 +90,12 @@ p.colo4 {
 	margin: 50px auto;
   top: 126%;
   left:30%;
-
 }
+h6{
+  font-size: 20px;
+  color:#111;
+}
+
 h3{
   color: #dedede;
 }
@@ -167,7 +169,7 @@ h5{
      transition: 0.5s ease-in-out;
      z-index: 1;
    }
-   #icon{
+   .icon{
      width: 100px;
      height: 100px;
      position: relative;
@@ -175,7 +177,7 @@ h5{
      text-align: center;
      color: white;
    }
-   .icons .ico #icon:hover{
+   .icons .ico .icon:hover{
      cursor: pointer;
 
    }
@@ -196,7 +198,7 @@ h5{
    .icons .ico:hover:before{
      transform: scale(.9);
    }
-  #icons:hover{
+  .icons:hover{
      color: blue;
    }
 
@@ -297,7 +299,7 @@ code {
     margin-bottom:11px;
     -webkit-font-smoothing: antialiased;
     cursor: pointer;
-    text-decoration-style: none;
+    text-decoration:none;
     color: rgba(255,255,255,0.8);
     list-style: none;
   }
@@ -327,11 +329,11 @@ code {
 .bar a {
   display: block;
   padding: 10%;
-  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(144, 132, 132, 0.65) 100%);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 0%, rgba(144, 132, 132, 0.65) 100%);
   color: white;
   font-size: 19px;
   text-decoration: none;
-  transition: color 0.2s; background 0.5s;
+  transition: color 0.2s;
 }
 
 .bar a:hover {
@@ -350,7 +352,6 @@ code {
   left: 0;
   z-index: 1;
   padding: 4em;
-  /*background-image: linear-gradient(135deg, rgb(17, 145, 188) 0%,rgb(241, 226, 226) 35%,rgb(247, 241, 241) 100%);*/
   background-size: 200%;
   background: linear-gradient(132deg, #1091bd, #ad3e36);
   background-size: 400% 400%;
@@ -390,7 +391,7 @@ label {
 
 .sidebartoggle:checked ~ .page-wrap {
   left: 200px;
-  box-shadow: 0 0 5px 5px rgba(68, 65, 65);
+  box-shadow: 0 0 5px 5px rgb(68, 65, 65);
 }
 
 /* Micro reset */
@@ -441,7 +442,7 @@ html, body { height: 100%; width: 100%;}
   height:300px;
   border-radius:3%;
   border-bottom-width:75px;
-  transform: scale3d(0.5,0.5);
+  transform: scale(0.5,0.5);
 
 }
 
@@ -450,7 +451,7 @@ html, body { height: 100%; width: 100%;}
   height:220px;
   border-radius:0;
   opacity:1;
-  transform: scale3d(0.5,0.5);
+  transform: scale(0.5,0.5);
 
 }
 
@@ -576,8 +577,10 @@ section{
   left:45%;
   width: 100%;
 }
-
+}
 @media screen and (max-width:500px) {
-  h5{font-size: 25px}
+  h5{
+    font-size: 25px
+  }
 
 }

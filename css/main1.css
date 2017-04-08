@@ -231,10 +231,10 @@ code {
   width:100%;
 }
 .box{
+  width: 112%;
   margin-top: -5%;
   background-color:#16131b;
   opacity: 0.4;
-  width:1263px;
   height: 120px;
 }
   .menu{
@@ -494,7 +494,7 @@ footer{
   right:8%;
 }
 
-@media all and (max-width:900px) {
+@media all and (max-width:1000px) {
   .menu{
     visibility: hidden;
 
@@ -503,6 +503,7 @@ footer{
     visibility: hidden;
 
   }
+
   label{ visibility: visible;}
 
   .page-wrap{
@@ -513,6 +514,9 @@ footer{
   .container{
    left:-394%;
    visibility: hidden;
+  }
+  .box{
+    width: 100%;
   }
   .line{
     width: 200px;
@@ -533,4 +537,9 @@ footer{
  .portfolio{
    left:50%;
  }
+}
+@media all and (max-width:780px) {
+  .info{
+    visibility: hidden;
+  }
 }
